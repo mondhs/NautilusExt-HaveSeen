@@ -6,12 +6,15 @@ This is primitive python implementation with ruby back-end to support "have seen
 Covered scenario. There is multiple ubuntu box on my local network. There is collaborative effort to review bunch of files on main computer. 
 It would be good to have some functionality to when someone review the file he/she should put some tag as have-seen. This tag should be promoted on every box across local network.
 
-Nautilus-ext
+### Front-end: Nautilus Extension
+
+More info: http://projects.gnome.org/nautilus-python/documentation/html/
 
 Install: Script should be copied to ~/.local/share/nautilus-python/extensions and some constants updated.
 
 Implemented functionality for Ubuntu Nautilus. Main idea if I reviewed file I put with gvfs-set-attribute set icon and send to remote box the file name. Next script fetch all have-seen files and synchronize them.
 
+### Back-end: Script
 
 Pre-request: Back-end on ruby. Should be installed ruby with some plugins. Also apache should be configured to support ruby as cgi.
 
