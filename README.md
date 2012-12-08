@@ -8,7 +8,9 @@ It would be good to have some functionality to when someone review the file he/s
 
 ### Front-end: Nautilus Extension
 
-More info: http://projects.gnome.org/nautilus-python/documentation/html/
+More info: 
+* http://projects.gnome.org/nautilus-python/documentation/html/
+* http://www.ibm.com/developerworks/library/l-script-linux-desktop-2/index.html
 
 Install: Script should be copied to ~/.local/share/nautilus-python/extensions and some constants updated.
 
