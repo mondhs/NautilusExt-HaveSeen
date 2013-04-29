@@ -23,3 +23,7 @@ Pre-request: Back-end on ruby. Should be installed ruby with some plugins. Also 
 Install: Copy scripts to some non-root user public_html folder all scripts. 
 
 Nautilus extension will send to http://127.0.0.1/~user/have-seen/api/append.rb and fetch read already seen from http://127.0.0.1/~user/have-seen/api/fetch.rb. data will be stored in non-sufficient pretty-json format in ~/public_html/have-seen/repo/seen.json
+
+
+Related issues:
+* https://bugs.launchpad.net/nautilus-compare/+bug/1172953
