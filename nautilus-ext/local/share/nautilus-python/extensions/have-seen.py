@@ -33,13 +33,13 @@ class HaveSeenMenuExtension(GObject.GObject, Nautilus.MenuProvider):
         f = opener.open(req)
         json_object = simplejson.load(f)
         for value in json_object:
-			haveSeenFile = parent_uri+"/"+value
+			#print "[syncFoldersWithRemote]" + parent_uri+"/"+value # example usage
+			haveSeenFile = parent_uri+"/"+value.encode('utf-8')
 			self.markAsSeen(haveSeenFile)
-			#print "[syncFoldersWithRemote]" + haveSeenFile # example usage
 	
 	#add emebeded icon
     def markAsSeen(self, file_uri):
-        command = "gvfs-set-attribute " + file_uri + " -t stringv metadata::emblems OK"
+        command = "gvfs-set-attribute \"" + file_uri + "\" -t stringv metadata::emblems OK"
         print "[markAsSeen]"+command
         os.system(command)
         
